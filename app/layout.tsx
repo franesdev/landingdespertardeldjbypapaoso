@@ -13,21 +13,8 @@ export const metadata: Metadata = {
     "Semana del DJ: 5 días de clases gratis en vivo. Aprende a mezclar como profesional con Papa Oso. Regístrate ahora y únete al grupo VIP de WhatsApp.",
   generator: "v0.app",
   icons: {
-    icon: [
-      {
-        url: "/icon-light-32x32.png",
-        media: "(prefers-color-scheme: light)",
-      },
-      {
-        url: "/icon-dark-32x32.png",
-        media: "(prefers-color-scheme: dark)",
-      },
-      {
-        url: "/icon.svg",
-        type: "image/svg+xml",
-      },
-    ],
-    apple: "/apple-icon.png",
+    icon: "/vinilo.png",
+    apple: "/vinilo.png",
   },
 }
 

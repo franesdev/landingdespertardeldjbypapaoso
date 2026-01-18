@@ -35,12 +35,12 @@ const benefits = [
 
 export function BenefitsSection() {
   return (
-    <section id="beneficios" className="py-24 px-6 md:px-12 bg-card">
+    <section id="beneficios" className="py-24 px-6 md:px-12 bg-black">
       <div className="max-w-6xl mx-auto">
         <div className="text-center mb-16">
-          <span className="text-primary font-semibold uppercase tracking-wide text-sm">Por qué inscribirte</span>
-          <h2 className="font-display text-5xl md:text-6xl text-foreground mt-4">QUÉ VAS A APRENDER</h2>
-          <p className="text-muted-foreground text-lg mt-4 max-w-2xl mx-auto">
+          <span className="text-red-600 font-semibold uppercase tracking-wide text-sm">Por qué inscribirte</span>
+          <h2 className="font-display text-5xl md:text-6xl text-white mt-4">QUÉ VAS A APRENDER</h2>
+          <p className="text-gray-400 text-lg mt-4 max-w-2xl mx-auto">
             En solo 5 días vas a tener las bases para empezar a mezclar como profesional
           </p>
         </div>
@@ -49,13 +49,13 @@ export function BenefitsSection() {
           {benefits.map((benefit, index) => (
             <div
               key={index}
-              className="group bg-background border border-border p-8 rounded-xl hover:border-primary/50 transition-all duration-300"
+              className="group bg-gray-900 border border-gray-800 p-8 rounded-xl hover:border-red-600/50 transition-all duration-300"
             >
-              <div className="bg-primary/10 w-14 h-14 rounded-lg flex items-center justify-center mb-6 group-hover:bg-primary/20 transition-colors">
-                <benefit.icon className="h-7 w-7 text-primary" />
+              <div className="bg-red-600/10 w-14 h-14 rounded-lg flex items-center justify-center mb-6 group-hover:bg-red-600/20 transition-colors">
+                <benefit.icon className="h-7 w-7 text-red-600" />
               </div>
-              <h3 className="font-display text-2xl text-foreground mb-3">{benefit.title}</h3>
-              <p className="text-muted-foreground leading-relaxed">{benefit.description}</p>
+              <h3 className="font-display text-2xl text-white mb-3">{benefit.title}</h3>
+              <p className="text-gray-400 leading-relaxed">{benefit.description}</p>
             </div>
           ))}
         </div>
